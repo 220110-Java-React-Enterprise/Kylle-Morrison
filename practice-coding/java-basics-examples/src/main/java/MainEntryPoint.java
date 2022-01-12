@@ -32,8 +32,20 @@ public class MainEntryPoint {
         myPetJimmy.makeSound();
 
 
+        StaticExample objA = new StaticExample();
+        StaticExample objB = new StaticExample();
+
+        System.out.println("Non-static members: " + objA.getNonStaticInt() + ", " + objB.getNonStaticInt());
+        System.out.println("Static member: " + objA.getStaticInt() + ", " + objB.getStaticInt());
 
 
+        objA.setNonStaticInt(6);
+        objB.setNonStaticInt(7);
+        objB.setStaticInt(20);
+        objA.setStaticInt(10);
+
+        System.out.println("Non-static members: " + objA.getNonStaticInt() + ", " + objB.getNonStaticInt());
+        System.out.println("Static members: " + objA.getStaticInt() + ", " + objB.getStaticInt());
 
     }
 }
