@@ -12,10 +12,13 @@ public class MainEntryPoint {
             System.out.println(args[i]);
         }
 
+        if (args.length >= 2 && args[0].equals("dog")) {
+
+            Dog myDogSasha = new Dog(args[1]);
+            myDogSasha.makeSound();
+        }
 
 
-        String sasha = "Sasha";
-        Dog myDogSasha = new Dog(sasha); // Here we are creating and using a string object
 
         // Runtime Polymorphism - We can have a reference to Animal that points to a dog
         Animal myPetJimmy = new Dog("Jimmy"); // Here we are simply using what's called a "string literal"
@@ -25,7 +28,12 @@ public class MainEntryPoint {
         Object thingy = new String();
         thingy = new Dog("");
 
-        myDogSasha.makeSound();
+
         myPetJimmy.makeSound();
+
+
+
+
+
     }
 }
