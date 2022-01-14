@@ -5,7 +5,8 @@ public class Main {
 
         IntegerSelectionSort.sort(array);
 
-
-        System.out.println(array);
+        for(int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
     }
 }

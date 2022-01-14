@@ -24,8 +24,9 @@ public class IntegerSelectionSort {
                     indexOfLeastInt = j;
                 }
             }
-            tempInt = array[0];
-            array[0] = array[indexOfLeastInt];
+
+            tempInt = array[i];
+            array[i] = array[indexOfLeastInt];
             array[indexOfLeastInt] = tempInt;
         }
     }
