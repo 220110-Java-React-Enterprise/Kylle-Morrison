@@ -1,7 +1,9 @@
 public class StaticExample {
 
+    //note these fields are private, see comments about encapsulation below
     private static int staticInt = 5;
     private int nonStaticInt = 5;
+
 
 
     // Keep in mind the definition of encapsulation, which includes having a class be in charge of changes to its own internal state.
@@ -10,6 +12,7 @@ public class StaticExample {
     public int getStaticInt() {
         return staticInt;
     }
+
     public void setStaticInt(int staticInt) {
         StaticExample.staticInt = staticInt;
     }
