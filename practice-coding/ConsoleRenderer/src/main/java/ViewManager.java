@@ -9,13 +9,14 @@ import java.util.Scanner;
 public class ViewManager {
     private static ViewManager viewManager;
     private boolean running;
-    private Scanner scanner;
+    private final Scanner scanner;
 
     // When adapting this in to the P0, don't forget to replace this with your custom list structure
     List<View> viewList;
     View nextView;
 
     private ViewManager() {
+        //set up starting values and references
         running = true;
         scanner = new Scanner(System.in);
         viewList = new LinkedList<>();
@@ -53,7 +54,7 @@ public class ViewManager {
     }
 
     public boolean isRunning() {
-
+        return running;
     }
 
 }

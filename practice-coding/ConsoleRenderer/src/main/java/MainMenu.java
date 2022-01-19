@@ -7,15 +7,20 @@ public class MainMenu extends View{
 
     @Override
     public void renderView() {
+        //prompt user
         System.out.println("========== Main Menu ==========");
         System.out.println("Enter name: ");
 
-        //
+        //get input from user
         String input = viewManager.getScanner().nextLine();
 
-        //perform validation
+        //preform validation
+
+        //store this for use later
         DataStore.setName(input);
-        viewManager.navigate("Submenu");
+
+        //navigate to next menu
+        viewManager.navigate("SubMenu");
 
     }
 }

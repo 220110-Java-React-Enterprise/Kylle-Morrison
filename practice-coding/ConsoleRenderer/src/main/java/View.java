@@ -1,10 +1,10 @@
 public abstract class View {
 
     protected String viewName;
-    protected ViewManager;
+    protected ViewManager viewManager;
 
 
-    public String getView() {
+    public String getViewName() {
         return viewName;
     }
 
